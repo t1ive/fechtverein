@@ -9,9 +9,9 @@
   <script src="/fechtverein/assets/js/script.js" defer></script>
 </head>
 
-<body class="pt-24">
+<body>
   <!-- header -->
-    <header class="w-full fixed z-50 bg-white top-0">
+    <header class="w-full z-50 bg-white top-0">
   <div class="container mx-auto max-w-4xl px-4 md:px-8">
     <nav class="flex items-start justify-between py-4 flex-col lg:flex-row">
       <!-- logo - start -->
@@ -84,13 +84,15 @@
 <section>
   <div class="container mx-auto max-w-4xl">
     <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-      <div class="mb-8 flex flex-wrap justify-between md:mb-16">
+      <div class="mb-8 flex flex-wrap justify-center md:mb-16 items-center">
+        
+        <!-- text -->
         <div
-          class="mb-6 flex w-full flex-col justify-center sm:mb-12 lg:mb-0 lg:w-1/3 lg:pb-24 lg:pt-48"
+          class=" flex w-full flex-col justify-center lg:w-1/3 my-8"
         >
           <div class="mx-auto">
             <h1 class="mb-2 text-5xl font-bold text-black">Fechtklub</h1>
-            <h1 class="mb-4 text-4xl font-bold text-black">Wr. Neudorf</h1>
+            <h2 class="mb-4 text-4xl font-bold text-black">Wr. Neudorf</h2>
 
             <a
               href="/fechtverein/#contact"
@@ -100,25 +102,13 @@
           </div>
         </div>
 
-        <div class="mb-12 flex w-full md:mb-16 lg:w-2/3">
-          <div
-            class="relative left-12 top-12 z-10 -ml-12 overflow-hidden rounded-lg bg-gray-100 shadow-lg grayscale md:left-16 md:top-16 lg:ml-0"
-          >
+        <!-- image -->
+        <div class="lg:w-2/3 max-w-lg">
+          <div class="overflow-hidden rounded-lg shadow-lg">
             <img
-              src="assets/images/fencing-man-mask-dagger-med.jpeg"
+              src="assets/images/fencing-flyer-cropped-large.jpeg"
               loading="lazy"
               alt=""
-              class="h-full w-full object-cover object-center"
-            />
-          </div>
-
-          <div
-            class="overflow-hidden rounded-lg bg-gray-100 shadow-lg grayscale"
-          >
-            <img
-              src="assets/images/fencing-standing-large.jpeg"
-              loading="lazy"
-              alt="Photo by Manny Moreno"
               class="h-full w-full object-cover object-center"
             />
           </div>
@@ -128,12 +118,13 @@
   </div>
 </section>
 
+
 <!-- blog teaser -->
 <section class="bg-gray-200 py-5">
-  <div class="container mx-auto my-12 max-w-4xl px-4 md:my-20">
+  <div class="container mx-auto my-12 max-w-4xl md:my-20">
     <div class="flex flex-wrap justify-center">
       <div
-        class="mb-10 flex w-full flex-col px-5 text-left sm:mx-5 sm:mb-12 lg:w-1/2 lg:text-left"
+        class="max-w-md mb-10 flex w-full flex-col px-4 text-left sm:mx-5 sm:mb-12 lg:w-1/2 lg:text-left"
       >
         <h2 class="mb-4 text-4xl font-bold text-black sm:text-5xl md:mb-8">
           Neuester Blogeintrag
@@ -154,9 +145,10 @@
         </div>
       </div>
 
-      <div class="flex w-full px-4 md:w-1/2 lg:w-1/3">
+      <div class="flex w-full px-4 justify-center md:w-1/2 lg:w-1/3">
          <!-- article - start -->
-<div class="flex flex-col overflow-hidden rounded-lg border bg-white max-w-xs">
+<div class="flex flex-col overflow-hidden justify-between rounded-lg border bg-white max-w-xs">
+  <div>
   <a
     href="/fechtverein/2023/09/28/saisonstart-daivid-hertel.html"
     class="group relative block h-80 overflow-hidden bg-gray-100 md:h-64"
@@ -169,19 +161,23 @@
     />
   </a>
 
-  <div class="flex flex-col justify-between p-4 sm:p-6 h-full" >
-    <div>
-      <h2 class="mb-2 text-lg font-semibold text-gray-800">
-        <a
-        href="#"
-        class="transition duration-100 hover:text-sky-500 active:text-sky-600"
-        >Großartiger Saisonstart von David Hertel</a
-        >
-      </h2>
-      
-      <p class="text-gray-500"><p>Beim ersten Turnier der neuen Saison 2023/24 konnte David Hertel an seine Erfolge vom Frühjahr nahtlos anschließen.</p>
+  <div class="px-4 sm:px-6 pt-4">
+    <h2 class="mb-2 text-lg font-semibold text-gray-800">
+      <a
+      href="#"
+      class="transition duration-100 hover:text-sky-500 active:text-sky-600"
+      >Großartiger Saisonstart von David Hertel</a
+      >
+    </h2>
+    
+    <p class="text-gray-500"><p>Beim ersten Turnier der neuen Saison 2023/24 konnte David Hertel an seine Erfolge vom Frühjahr nahtlos anschließen.</p>
 </p>
-    </div>
+  </div>
+
+</div>
+
+  <div class="flex flex-col px-4 sm:px-6 pb-4" >
+
 
     <div class="mt-2 flex items-end justify-between ">
       <div class="flex items-center gap-2">
@@ -208,59 +204,55 @@
 
 <!-- trainingszeiten -->
 <section id="trainingtimes" class="body-font text-gray-600">
-  <div class="container mx-auto max-w-4xl py-10 md:py-20 ">
-
-  
-  <h2
-    class="mb-4 text-center text-4xl font-bold text-black sm:text-5xl md:mb-10"
-  >
-    Trainingszeiten
-  </h2>
-  <div
-    class="md:flex md:justify-center"
-  >
-    <div
-      class="hidden w-full overflow-hidden rounded-lg grayscale md:visible md:block md:w-1/2"
+  <div class="container mx-auto max-w-4xl py-10 md:py-20">
+    <h2
+      class="mb-4 text-center text-4xl font-bold text-black sm:text-5xl md:mb-10"
     >
-      <img
-        alt="feature"
-        class="h-full w-full object-cover object-center"
-        src="assets/images/311493241_2402517823241297_7686960938833741140_n.jpg"
-      />
-    </div>
+      Trainingszeiten
+    </h2>
+    <div class="md:flex md:justify-center">
+      <div
+        class="hidden w-full overflow-hidden rounded-lg grayscale md:visible md:block md:w-1/2"
+      >
+        <img
+          alt="feature"
+          class="h-full w-full object-cover object-center"
+          src="assets/images/child-training-front-orig.jpg"
+        />
+      </div>
 
-    <div
-      class="mx-10 flex flex-col flex-wrap text-center md:text-left lg:pl-5"
-    >
-      <h2 class="title-font mb-3 text-lg font-medium text-gray-900">
-        Allgemeines Training
-      </h2>
-      <p class="text-base leading-relaxed">
-        Dienstag 18:15 bis 20:30 <br />
-        Donnerstag 18:15 bis 20:30
-      </p>
+      <div
+        class="mx-10 flex flex-col flex-wrap text-center md:text-left lg:pl-5"
+      >
+        <h2 class="title-font mb-3 text-lg font-medium text-gray-900">
+          Allgemeines Training
+        </h2>
+        <p class="text-base leading-relaxed">
+          Dienstag 18:15 bis 20:30 <br />
+          Donnerstag 18:15 bis 20:30
+        </p>
 
-      <h2 class="title-font mb-3 mt-5 text-lg font-medium text-gray-900">
-        Wettkampftraining
-      </h2>
-      <p class="text-base leading-relaxed">Freitag nach Vereinbarung</p>
+        <h2 class="title-font mb-3 mt-5 text-lg font-medium text-gray-900">
+          Wettkampftraining
+        </h2>
+        <p class="text-base leading-relaxed">Freitag nach Vereinbarung</p>
 
-      <h2 class="title-font mb-3 mt-5 text-lg font-medium text-gray-900">
-        Kindertraining
-      </h2>
-      <p class="text-base leading-relaxed">
-        Dienstag 17:00 bis 18:00 <br />
-        Donnerstag 17:00 bis 18:00
-      </p>
+        <h2 class="title-font mb-3 mt-5 text-lg font-medium text-gray-900">
+          Kindertraining
+        </h2>
+        <p class="text-base leading-relaxed">
+          Dienstag 17:00 bis 18:00 <br />
+          Donnerstag 17:00 bis 18:00
+        </p>
+      </div>
     </div>
   </div>
-</div>
 </section>
 
 <!-- kontakt -->
 <section
   id="contact"
-  class="body-font relative bg-gray-200 py-24 text-gray-600"
+  class="body-font relative bg-gray-200 py-24 px-4 text-gray-600"
 >
   <div class="container mx-auto max-w-4xl">
     <h2
@@ -531,12 +523,12 @@
           <p
             class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base"
           >
-            Übungsleiterin
+            
           </p>
           <p
             class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base"
           >
-            schriftfuehrer@fechtklub.at
+            
           </p>
         </div>
       </div>
